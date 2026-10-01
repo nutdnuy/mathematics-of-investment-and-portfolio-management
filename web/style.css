@@ -1,0 +1,82 @@
+@font-face{font-family:Roboto;src:url(fonts/roboto-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Roboto;src:url(fonts/roboto-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Roboto;src:url(fonts/roboto-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Noto Sans Thai";src:url(fonts/noto-sans-thai-thai-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Thai";src:url(fonts/noto-sans-thai-thai-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{color-scheme:light;--bg:#fff;--surface:#fff;--text:rgba(0,0,0,.87);--muted:rgba(0,0,0,.65);--line:#ddd;--primary:#6200ee;--on-primary:#fff;--shadow:0 2px 6px rgba(0,0,0,.08)}
+:root[data-theme=dark]{color-scheme:dark;--bg:#121212;--surface:#1e1e1e;--text:rgba(255,255,255,.87);--muted:rgba(255,255,255,.65);--line:#494949;--primary:#bb86fc;--on-primary:#000;--shadow:none}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Roboto,"Noto Sans Thai",sans-serif;font-size:17px;line-height:1.7}
+a{color:var(--primary);text-underline-offset:4px}
+button,input{font:inherit}
+button,a,input,summary{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--primary);outline-offset:4px}
+header,main,footer{width:min(1080px,calc(100% - 64px));margin:auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0 16px}
+.wordmark{font-size:22px;font-weight:500;text-decoration:none;color:var(--text)}
+.wordmark span{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+button,.button{min-height:48px;padding:10px 20px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--text);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+button:hover,.button:hover{border-color:var(--primary)}
+button:active,.button:active{box-shadow:none}
+.primary{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+nav{display:flex;gap:24px;border-bottom:1px solid var(--line)}
+nav a{display:flex;align-items:center;min-height:56px;text-decoration:none;color:var(--muted);padding:8px 0}
+nav a[aria-current=page]{color:var(--primary);border-bottom:3px solid var(--primary);font-weight:500}
+.hero{padding:64px 0 48px;max-width:1000px}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:1.2px;color:var(--muted);margin:0 0 16px}
+.status,.badge{display:inline-block;font-size:13px;border:1px solid var(--line);border-radius:4px;padding:4px 10px;margin:0 0 16px;color:var(--muted)}
+h1{font-size:clamp(32px,4vw,48px);line-height:1.15;font-weight:500;letter-spacing:-.7px;max-width:900px;margin:0 0 24px;overflow-wrap:break-word}
+h2{font-size:clamp(24px,3vw,30px);line-height:1.45;font-weight:500;margin:0 0 16px}
+.thai-title{font-size:23px;margin:0 0 16px;line-height:1.55}
+.lead{font-size:19px;max-width:750px;line-height:1.7;margin:0 0 24px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0}
+.facts{display:grid;grid-template-columns:1fr 1fr 2fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;margin:48px 0 0;gap:24px}
+.facts dt{font-size:13px;color:var(--muted)}
+.facts dd{font-size:24px;font-weight:500;margin:4px 0 0;line-height:1.4;font-variant-numeric:tabular-nums}
+.facts div:last-child dd{font-size:18px}
+.reading{max-width:780px;padding:32px 0 48px}
+.source{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;padding:32px;margin-bottom:64px;border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:var(--shadow)}
+p{margin:0 0 16px}
+.small{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0 48px;font-size:14px;color:var(--muted)}
+footer p{margin:0 0 8px}
+footer a{display:inline-flex;min-height:48px;align-items:center;margin-right:24px}
+.page-head{max-width:850px;padding:64px 0 32px}
+.topic{border-bottom:1px solid var(--line)}
+.topic:first-child{border-top:1px solid var(--line)}
+summary{display:flex;gap:24px;align-items:center;cursor:pointer;min-height:96px;padding:24px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:24px;color:var(--primary);margin-left:auto;padding:0 12px}
+.topic[open] summary:after{content:"−"}
+.number{font-size:14px;color:var(--muted);min-width:28px;font-variant-numeric:tabular-nums}
+.topic strong{font-size:20px;font-weight:500}
+.topic-thai{display:block;color:var(--muted)}
+.topic p{max-width:760px;margin:0 52px 32px}
+.library{padding:0;margin:0 0 64px;list-style:none}
+.book-row{display:flex;gap:24px;align-items:center;border-bottom:1px solid var(--line);padding:16px 0}
+.book-row>div{flex:1;min-width:0}
+.book-link{font-size:20px;font-weight:500;min-height:48px;display:flex;align-items:center;overflow-wrap:anywhere}
+.book-row p{font-size:16px;color:var(--muted);margin:0}
+.book-row .badge{margin:0;white-space:nowrap}
+label{display:block;font-size:14px;margin-top:32px;margin-bottom:8px}
+input{width:100%;max-width:600px;min-height:52px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 16px;color:var(--text)}
+#result-count{margin-top:8px}
+.skip{position:absolute;top:0;left:16px;background:var(--bg);padding:12px;transform:translateY(-150%);z-index:10}
+.skip:focus{transform:none}
+[hidden]{display:none!important}
+@media(max-width:640px){
+  header,main,footer{width:calc(100% - 32px)}
+  .top{gap:12px}.wordmark{font-size:19px}.wordmark span{font-size:11px}
+  button{font-size:13px;padding:8px 12px;white-space:nowrap}
+  nav{gap:16px}nav a{font-size:14px}
+  .hero,.page-head{padding-top:40px}.hero{padding-bottom:24px}
+  .thai-title{font-size:20px}.lead{font-size:17px}
+  .facts{grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.facts div:last-child{grid-column:1/-1}
+  .source{grid-template-columns:1fr;gap:24px;padding:24px;margin-bottom:40px}
+  .actions .button{width:100%}
+  .book-row{gap:12px;flex-wrap:wrap}.book-row>div{flex-basis:calc(100% - 40px)}
+  .book-row .badge{margin-left:40px}.book-link{font-size:18px;line-height:1.4}
+  .topic p{margin-left:0;margin-right:0}summary{gap:16px}.topic strong{font-size:18px}
+  .topic-thai{font-size:16px}summary:after{padding:0 4px}footer a{margin-right:16px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}

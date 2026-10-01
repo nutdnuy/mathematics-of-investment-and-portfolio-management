@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "quantitative-finance-notes",
+    "title": "Quantitative Finance Notes",
+    "description": "พื้นฐานการเงินเชิงปริมาณ",
+    "status": "Existing site"
+  },
+  {
+    "slug": "portfolio-management-toolkit",
+    "title": "Portfolio Management Toolkit",
+    "description": "เครื่องมือบริหารพอร์ต",
+    "status": "Existing site"
+  },
+  {
+    "slug": "statistical-arbitrage",
+    "title": "Statistical Arbitrage",
+    "description": "กลยุทธ์เชิงสถิติ",
+    "status": "Existing site"
+  },
+  {
+    "slug": "the-magnificent-jump",
+    "title": "The Magnificent Jump",
+    "description": "แบบจำลองราคาแบบกระโดด",
+    "status": "Existing site"
+  },
+  {
+    "slug": "option-pricing-models",
+    "title": "Option Pricing Models",
+    "description": "แบบจำลองราคาออปชัน",
+    "status": "Existing site"
+  },
+  {
+    "slug": "calendar-spread-vrp",
+    "title": "Calendar Spread under VRP",
+    "description": "Calendar spread และความผันผวน",
+    "status": "Existing site"
+  },
+  {
+    "slug": "robo-trade-notes",
+    "title": "Robo Trade Notes",
+    "description": "ระบบซื้อขายอัตโนมัติ",
+    "status": "Existing site"
+  },
+  {
+    "slug": "from-alpha-to-execution",
+    "title": "From Alpha to Execution",
+    "description": "จากอัลฟาสู่การซื้อขายจริง",
+    "status": "Book overview"
+  },
+  {
+    "slug": "mathematical-financial-derivatives",
+    "title": "Mathematical Financial Derivatives",
+    "description": "อนุพันธ์ทางการเงินเชิงคณิตศาสตร์",
+    "status": "Book overview"
+  },
+  {
+    "slug": "mathematics-of-investment-and-portfolio-management",
+    "title": "Mathematics of Investment and Portfolio Management",
+    "description": "คณิตศาสตร์การลงทุนและการบริหารพอร์ตการลงทุน",
+    "status": "Book overview"
+  }
+]
