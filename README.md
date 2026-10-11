@@ -1,15 +1,13 @@
-# Mathematics of Investment and Portfolio Management — public overview
+# mathematics-of-investment-and-portfolio-management — full book reader
 
-Live page: https://nutdnuy.github.io/mathematics-of-investment-and-portfolio-management/
+Live reader: https://nutdnuy.github.io/mathematics-of-investment-and-portfolio-management/
 
-This public repository contains original project introductions, thematic learning outlines and links to the ten-project collection. It is separate from the private full-book reader project. It does not contain the source PDF, extracted text, original covers, chapter images, or draft transcripts.
+The full reader replaces the former overview at the same URL, so existing bookshelf links now lead to readable chapters. Nuth confirmed public publication rights on 2026-10-11. See reader/RIGHTS.md.
 
-The full reader remains under source review and publication-rights review; this website must not be described as a verified full-book release. Source page/chapter counts are bibliographic facts, not published reading coverage.
+This is a disclosed transcription draft, not a fully reviewed edition. The original PDF and chapter downloads are included, and page review labels remain accurate.
 
-## Edit and build
+## Build and update
 
-Edit content.json for the overview and original learning themes, collection.json for the library, and web/ for styles and behavior. Run python3 scripts/build.py. The builder exports only the public website and bundled fonts to _site/ and validates local file references. Push to main to publish through GitHub Actions.
+Run `python3 scripts/build.py` to validate the SHA-256 snapshot manifest and all local HTML file/anchor references, then export `_site/`. Push to main publishes through GitHub Actions.
 
-## Assets
-
-Roboto and Noto Sans Thai fonts, Fontsource 5.2.8, SIL Open Font License 1.1. License texts are in web/fonts/. No third-party images or generated artwork are used. UI follows the QuantCorner/QuantSeras design system: local fonts, light reading layout, purple interactions, accessible controls, optional dark theme.
+The editable source project is `mathematics-of-investment-and-portfolio-management-notes`. Rebuild there with `python3 scripts/build_site.py --public-draft`, refresh `reader/` and `reader-manifest.json`, and run the public build. Do not manually mark pages reviewed. Legacy topics.html and library.html remain available.

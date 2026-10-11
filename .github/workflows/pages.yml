@@ -1,4 +1,4 @@
-name: Publish overview pages
+name: Publish book reader
 on:
   push:
     branches: [main]
@@ -17,7 +17,7 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/checkout@v4
-      - name: Build public overview and validate local references
+      - name: Build full reader and validate local references
         run: python3 scripts/build.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
