@@ -20,6 +20,9 @@ jobs:
       - name: Build full reader and validate local references
         run: python3 scripts/build.py
       - uses: actions/configure-pages@v5
+      - name: Point migrated book pages to the main Library domain
+        run: python3 scripts/set-library-canonicals.py
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
